@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
+import logo from '../images/logo-deltadex.png';
+
 function Header() {
   const [top, setTop] = useState(true);
 
@@ -25,7 +27,9 @@ function Header() {
           <div className="flex-shrink-0 mr-4">
             {/* Logo */}
             <Link to="/" className="block" aria-label="Cruip">
-              <svg
+              {/* <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-1 h-1 p-4 rounded-full"/> */}
+              <img src={logo} alt='logo' className="h-8"/>
+              {/* <svg
                 className="w-8 h-8"
                 viewBox="0 0 32 32"
                 xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +55,7 @@ function Header() {
                   fill="url(#header-logo)"
                   fillRule="nonzero"
                 />
-              </svg>
+              </svg> */}
             </Link>
           </div>
 
