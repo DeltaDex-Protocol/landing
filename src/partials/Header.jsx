@@ -85,7 +85,7 @@ function Header() {
               <li>
                 <Link
                   to="/signup"
-                  className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3"
+                  className="btn-sm text-gray-200 bg-gradient-to-r from-indigo-600 to-purple-600 ml-3"
                 >
                   <span>Launch App</span>
                   <svg
