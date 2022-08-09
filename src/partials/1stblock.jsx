@@ -38,7 +38,7 @@ function HeroHome() {
             <circle cx="155" cy="443" r="64" />
           </g>
         </svg>
-        <div className="h-128 w-128 max-w-128  rounded-full bg-purple-600 z-100 text-white">123</div>
+        {/* <div className="h-128 w-128 max-w-128  rounded-full bg-purple-600 z-100 text-white">123</div> */}
 
       </div>
 
