@@ -1,22 +1,39 @@
-import React from 'react';
+import React from "react";
 
-import TestimonialImage from '../images/testimonial.jpg';
+import TestimonialImage from "../images/testimonial.jpg";
 
 function Testimonials() {
   return (
     <section className="relative">
-
       {/* Illustration behind content */}
-      <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none -mb-32" aria-hidden="true">
-        <svg width="1760" height="518" viewBox="0 0 1760 518" xmlns="http://www.w3.org/2000/svg">
+      <div
+        className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none -mb-32"
+        aria-hidden="true"
+      >
+        <svg
+          width="1760"
+          height="518"
+          viewBox="0 0 1760 518"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <defs>
-            <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="illustration-02">
+            <linearGradient
+              x1="50%"
+              y1="0%"
+              x2="50%"
+              y2="100%"
+              id="illustration-02"
+            >
               <stop stopColor="#FFF" offset="0%" />
               <stop stopColor="#EAEAEA" offset="77.402%" />
               <stop stopColor="#DFDFDF" offset="100%" />
             </linearGradient>
           </defs>
-          <g transform="translate(0 -3)" fill="url(#illustration-02)" fillRule="evenodd">
+          <g
+            transform="translate(0 -3)"
+            fill="url(#illustration-02)"
+            fillRule="evenodd"
+          >
             <circle cx="1630" cy="128" r="128" />
             <circle cx="178" cy="481" r="40" />
           </g>
@@ -25,10 +42,11 @@ function Testimonials() {
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20">
-
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h2 className="h2 mb-2 text-white">Problems in DeFi derivatives</h2>
+            <h2 className="h2 mb-2 bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-600">
+              Problems in DeFi derivatives
+            </h2>
             {/* <p className="text-xl text-gray-600 text-white" data-aos="zoom-y-out">Arcu cursus vitae congue mauris rhoncus viverra nibh cras pulvinar mattis
                 blandit libero cursus mattis.</p> */}
           </div>
@@ -68,29 +86,35 @@ function Testimonials() {
           </div> */}
 
           {/* Testimonials */}
-          <div className="max-w-3xl mx-auto mt-0 flex flex-col space-y-10" data-aos="zoom-y-out">
-              {/* Testimonial */}
-              <div className="text-center px-12 py-8  mx-4 md:mx-0 flex space-x-10 bg-white text-black rounded-2xl">
-
-                <span className='font-bold text-3xl my-auto'>1</span>
-                <blockquote className="text-xl font-medium  text-left">
-                Derivatives are the next step in the evolution of decentralized finance, however, currently there is a lack of truly decentralized and efficient derivatives platforms.
-                </blockquote>
-              </div>
-              <div className="text-center px-12 py-8  mx-4 md:mx-0 flex space-x-10 bg-white text-black rounded-2xl">
-                  <span className='font-bold text-3xl my-auto'>2</span>
-                  <blockquote className="text-xl font-medium  text-left">
-                  There are P2P platforms that use centralized technology to match sellers and buyers.
-                  </blockquote>
-              </div>
-              <div className="text-center px-12 py-8  mx-4 md:mx-0 flex space-x-10 bg-white text-black rounded-2xl">
-                  <span className='font-bold text-3xl my-auto'>3</span>
-                  <blockquote className="text-xl font-medium  text-left">
-                  Peer-to-pool projects do not guarantee the payment of the option, such platforms have a very high risk of losing the amounts of liquidity providers
-                  </blockquote>
-              </div>
+          <div
+            className="max-w-3xl mx-auto mt-0 flex flex-col space-y-10"
+            data-aos="zoom-y-out"
+          >
+            {/* Testimonial */}
+            <div className="text-center px-12 py-8  mx-4 md:mx-0 flex space-x-10 bg-white text-black rounded-2xl">
+              <span className="font-bold text-3xl my-auto">1</span>
+              <blockquote className="text-xl font-medium  text-left">
+                Derivatives are the next step in the evolution of decentralized
+                finance, however, currently there is a lack of truly
+                decentralized and efficient derivatives platforms.
+              </blockquote>
+            </div>
+            <div className="text-center px-12 py-8  mx-4 md:mx-0 flex space-x-10 bg-white text-black rounded-2xl">
+              <span className="font-bold text-3xl my-auto">2</span>
+              <blockquote className="text-xl font-medium  text-left">
+                There are P2P platforms that use centralized technology to match
+                sellers and buyers.
+              </blockquote>
+            </div>
+            <div className="text-center px-12 py-8  mx-4 md:mx-0 flex space-x-10 bg-white text-black rounded-2xl">
+              <span className="font-bold text-3xl my-auto">3</span>
+              <blockquote className="text-xl font-medium  text-left">
+                Peer-to-pool projects do not guarantee the payment of the
+                option, such platforms have a very high risk of losing the
+                amounts of liquidity providers
+              </blockquote>
+            </div>
           </div>
-
         </div>
       </div>
     </section>
