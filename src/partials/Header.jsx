@@ -59,35 +59,49 @@ function Header() {
           <nav className="flex flex-grow">
             <ul className="flex flex-grow justify-end flex-wrap items-center">
               <li>
-                <Link
-                  to="/signin"
+                <button
                   className="font-medium text-gray-300 hover:text-gray-600 px-5 py-3 flex items-center transition duration-150 ease-in-out"
+                  onClick={() =>
+                    (window.location.href = "https://t.me/delta_dex")
+                  }
                 >
                   Community
-                </Link>
+                </button>
               </li>
               <li>
-                <Link
-                  to="/signin"
+                <button
                   className="font-medium text-gray-300 hover:text-gray-600 px-5 py-3 flex items-center transition duration-150 ease-in-out"
+                  onClick={() =>
+                    (window.location.href = "https://www.deltadex.io/")
+                  }
                 >
                   Docs
-                </Link>
+                </button>
               </li>
               <li>
-                <Link
-                  to="/signin"
+                <button
                   className="font-medium text-gray-300 hover:text-gray-600 px-5 py-3 flex items-center transition duration-150 ease-in-out"
+                  onClick={() =>
+                    (window.location.href =
+                      "https://github.com/DeltaDex-Protocol")
+                  }
                 >
                   Code
-                </Link>
+                </button>
               </li>
               <li>
                 <Link
-                  to="/signup"
+                  to=""
+                  href="https://github.com"
                   className="btn-sm text-gray-200 bg-gradient-to-r from-indigo-600 to-purple-600 ml-3"
                 >
-                  <span>Launch App</span>
+                  <button
+                    onClick={() =>
+                      (window.location.href = "http://195.133.147.162:3000/")
+                    }
+                  >
+                    Launch App
+                  </button>
                   <svg
                     className="w-3 h-3 fill-current text-gray-400 flex-shrink-0 ml-2 -mr-1"
                     viewBox="0 0 12 12"

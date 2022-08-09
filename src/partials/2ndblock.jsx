@@ -91,7 +91,7 @@ function Testimonials() {
             data-aos="zoom-y-out"
           >
             {/* Testimonial */}
-            <div className="text-center px-12 py-8  mx-4 md:mx-0 flex space-x-10 bg-white text-black rounded-2xl">
+            <div className="text-center px-12 py-8  mx-4 md:mx-0 flex space-x-10 bg-slate-900 text-white rounded-2xl">
               <span className="font-bold text-3xl my-auto">1</span>
               <blockquote className="text-xl font-medium  text-left">
                 Derivatives are the next step in the evolution of decentralized
@@ -99,14 +99,14 @@ function Testimonials() {
                 decentralized and efficient derivatives platforms.
               </blockquote>
             </div>
-            <div className="text-center px-12 py-8  mx-4 md:mx-0 flex space-x-10 bg-white text-black rounded-2xl">
+            <div className="text-center px-12 py-8  mx-4 md:mx-0 flex space-x-10 bg-slate-900 text-white rounded-2xl">
               <span className="font-bold text-3xl my-auto">2</span>
               <blockquote className="text-xl font-medium  text-left">
                 There are P2P platforms that use centralized technology to match
                 sellers and buyers.
               </blockquote>
             </div>
-            <div className="text-center px-12 py-8  mx-4 md:mx-0 flex space-x-10 bg-white text-black rounded-2xl">
+            <div className="text-center px-12 py-8  mx-4 md:mx-0 flex space-x-10 bg-slate-900 text-white rounded-2xl">
               <span className="font-bold text-3xl my-auto">3</span>
               <blockquote className="text-xl font-medium  text-left">
                 Peer-to-pool projects do not guarantee the payment of the
