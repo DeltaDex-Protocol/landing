@@ -9,7 +9,6 @@ function HeroHome() {
 
   return (
     <section className="relative">
-
       {/* Illustration behind hero content */}
       <div
         className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none"
@@ -40,13 +39,11 @@ function HeroHome() {
           </g>
         </svg>
         {/* <div className="h-128 w-128 max-w-128  rounded-full bg-purple-600 z-100 text-white">123</div> */}
-
       </div>
 
-
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
-      <div class="absolute right-12 bottom-80 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-1 h-1 p-28 rounded-full"></div>
-      <div class="absolute left-12 bottom-20 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-1 h-1 p-16 rounded-full"></div>
+        <div class="absolute right-12 bottom-80 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-1 h-1 p-28 rounded-full"></div>
+        <div class="absolute left-12 bottom-20 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-1 h-1 p-16 rounded-full"></div>
 
         {/* Hero content */}
         <div className="pt-32 pb-12 md:pt-40 md:pb-20">
