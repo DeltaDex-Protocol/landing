@@ -1,49 +1,36 @@
-import React, { useEffect } from 'react';
-import {
-  Routes,
-  Route,
-  useLocation
-} from 'react-router-dom';
-
-import 'aos/dist/aos.css';
-import './css/style.css';
-
-import AOS from 'aos';
-
-import Home from './pages/Home';
-import SignIn from './pages/SignIn';
-import SignUp from './pages/SignUp';
-import ResetPassword from './pages/ResetPassword';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
-
-  const location = useLocation();
-
-  useEffect(() => {
-    AOS.init({
-      once: true,
-      disable: 'phone',
-      duration: 700,
-      easing: 'ease-out-cubic',
-    });
-  });
-
-  useEffect(() => {
-    document.querySelector('html').style.scrollBehavior = 'auto'
-    window.scroll({ top: 0 })
-    document.querySelector('html').style.scrollBehavior = ''
-  }, [location.pathname]); // triggered on route change
-
   return (
-    <>
-    <Home/>
-      {/* <Routes> */}
-        {/* <Route exact path="/" element={<Home />} /> */}
-        {/* <Route path="/signin" element={<SignIn />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/reset-password" element={<ResetPassword />} /> */}
-      {/* </Routes> */}
-    </>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>Hello Vite + React!</p>
+        <p>By Divyaswor Makai Shrestha</p>
+        <h4>Visit my Socials</h4>
+        <a href="https://medium.com/@makaidivyaswor" target="_blank">
+          Medium
+        </a>
+        <a href="https://twitter.com/makaidivya" target="_blank">
+          Twitter
+        </a>
+        <a href="https://diamondapp.com/u/makai" target="_blank">
+          DeSo
+        </a>
+        <a
+          target="_blank"
+          href="https://www.buymeacoffee.com/makaidivyaswor"
+          className="buy-me-a-coffee"
+        >
+          <img
+            src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
+            alt="Buy me a coffee"
+          />
+          <span>Buy me a coffee</span>
+        </a>
+      </header>
+    </div>
   );
 }
 
