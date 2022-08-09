@@ -93,7 +93,7 @@ function Header() {
                 <Link
                   to=""
                   href="https://github.com"
-                  className="btn-sm text-gray-200 bg-gradient-to-r from-indigo-600 to-purple-600 ml-3"
+                  className="btn-sm text-gray-200 bg-gradient-to-r from-indigo-600 to-purple-600 ml-3 hover:opacity-75 "
                 >
                   <button
                     onClick={() =>
