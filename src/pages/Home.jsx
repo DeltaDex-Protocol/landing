@@ -21,7 +21,6 @@ function Home() {
         <Testimonials />
 
         <FeaturesHome />
-        <FeaturesHome />
         <FeaturesBlocks />
         <Newsletter />
       </main>
