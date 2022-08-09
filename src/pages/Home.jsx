@@ -19,7 +19,6 @@ function Home() {
         {/*  Page sections */}
         <HeroHome />
         <Testimonials />
-
         <FeaturesHome />
         <FeaturesBlocks />
         <Newsletter />
