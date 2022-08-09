@@ -16,7 +16,7 @@ function Header() {
   return (
     <header
       className={`fixed w-full z-30 md:bg-opacity-90 transition duration-300 ease-in-out ${
-        !top && "bg-white backdrop-blur-sm shadow-lg"
+        !top && "bg-black backdrop-blur-sm shadow-lg"
       }`}
     >
       <div className="max-w-6xl mx-auto px-5 sm:px-6">
@@ -61,7 +61,7 @@ function Header() {
               <li>
                 <Link
                   to="/signin"
-                  className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out"
+                  className="font-medium text-gray-300 hover:text-gray-600 px-5 py-3 flex items-center transition duration-150 ease-in-out"
                 >
                   Community
                 </Link>
@@ -69,7 +69,7 @@ function Header() {
               <li>
                 <Link
                   to="/signin"
-                  className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out"
+                  className="font-medium text-gray-300 hover:text-gray-600 px-5 py-3 flex items-center transition duration-150 ease-in-out"
                 >
                   Docs
                 </Link>
@@ -77,7 +77,7 @@ function Header() {
               <li>
                 <Link
                   to="/signin"
-                  className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out"
+                  className="font-medium text-gray-300 hover:text-gray-600 px-5 py-3 flex items-center transition duration-150 ease-in-out"
                 >
                   Code
                 </Link>
