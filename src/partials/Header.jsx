@@ -84,10 +84,17 @@ function Header() {
               </li>
               <li>
                 <Link
-                  to="/signup"
+                  to=""
+                  href="https://github.com"
                   className="btn-sm text-gray-200 bg-gradient-to-r from-indigo-600 to-purple-600 ml-3"
                 >
-                  <span>Launch App</span>
+                  <button
+                    onClick={() =>
+                      (window.location.href = "http://195.133.147.162:3000/")
+                    }
+                  >
+                    Launch App
+                  </button>
                   <svg
                     className="w-3 h-3 fill-current text-gray-400 flex-shrink-0 ml-2 -mr-1"
                     viewBox="0 0 12 12"
