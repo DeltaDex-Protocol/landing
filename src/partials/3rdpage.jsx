@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import Transition from "../utils/Transition";
 
-import FeaturesBg from "../images/Optionpayoff.png";
-import FeaturesElement from "../images/features-element.png";
+import optionChart from "../images/Optionpayoff.png";
+import optionReplication from "../images/replication.png";
 
 function Features() {
   const [tab, setTab] = useState(1);
@@ -50,7 +50,9 @@ function Features() {
               data-aos="fade-right"
             >
               <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-6">
-                <h3 className="h3 mb-3 text-white">Improving Capital Efficency</h3>
+                <h3 className="h3 mb-3 text-white">
+                  Improving Capital Efficency
+                </h3>
                 <p className="text-xl text-gray-400 ">
                   Create any option contract.
                 </p>
@@ -150,7 +152,7 @@ function Features() {
                   <div className="relative inline-flex flex-col">
                     <img
                       className="md:max-w-none mx-auto rounded"
-                      src={FeaturesBg}
+                      src={optionChart}
                       width="500"
                       height="462"
                       alt="Features bg"
@@ -172,7 +174,7 @@ function Features() {
                   <div className="relative inline-flex flex-col">
                     <img
                       className="md:max-w-none mx-auto rounded"
-                      src={FeaturesBg}
+                      src={optionReplication}
                       width="500"
                       height="462"
                       alt="Features bg"
@@ -188,7 +190,6 @@ function Features() {
                   </div>
                 </Transition>
                 {/* Item 3 */}
-
               </div>
             </div>
           </div>
