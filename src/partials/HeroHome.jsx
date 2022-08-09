@@ -99,8 +99,8 @@ function HeroHome() {
                 <img
                   className="mx-auto"
                   src={landinggif}
-                  width="768"
-                  height="432"
+                  width="500"
+                  // height="500"
                   alt="Hero"
                 />
               </div>
