@@ -1,7 +1,7 @@
 {
   "name": "simple-light-react",
   "version": "0.1.0",
-  "homepage": "https://deltadex-protocol.github.io/landing/",
+  "homepage": "https://deltadex-protocol.github.io/landing",
   "private": false,
   "scripts": {
     "predeploy": "npm run build",
