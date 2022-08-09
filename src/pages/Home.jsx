@@ -1,8 +1,8 @@
 import React from "react";
 
 import Header from "../partials/Header";
-import HeroHome from "../partials/1stpage";
-import FeaturesHome from "../partials/3rdpage";
+import HeroHome from "../partials/1stblock";
+import FeaturesHome from "../partials/3rdblock";
 import FeaturesBlocks from "../partials/FeaturesBlocks";
 import Testimonials from "../partials/Testimonials";
 import Newsletter from "../partials/Newsletter";
