@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import Transition from "../utils/Transition";
 
-import FeaturesBg from "../images/Optionpayoff.png";
-import FeaturesElement from "../images/features-element.png";
+import optionsChart from "../images/Optionpayoff.png";
+import optionsReplication from "../images/replication.png";
 
 function Features() {
   const [tab, setTab] = useState(1);
@@ -150,7 +150,7 @@ function Features() {
                   <div className="relative inline-flex flex-col">
                     <img
                       className="md:max-w-none mx-auto rounded"
-                      src={FeaturesBg}
+                      src={optionsChart}
                       width="500"
                       height="462"
                       alt="Features bg"
@@ -172,18 +172,10 @@ function Features() {
                   <div className="relative inline-flex flex-col">
                     <img
                       className="md:max-w-none mx-auto rounded"
-                      src={FeaturesBg}
+                      src={optionsReplication}
                       width="500"
                       height="462"
                       alt="Features bg"
-                    />
-                    <img
-                      className="md:max-w-none absolute w-full left-0 transform animate-float"
-                      src={FeaturesElement}
-                      width="500"
-                      height="44"
-                      alt="Element"
-                      style={{ top: "30%" }}
                     />
                   </div>
                 </Transition>
@@ -202,18 +194,10 @@ function Features() {
                   <div className="relative inline-flex flex-col">
                     <img
                       className="md:max-w-none mx-auto rounded"
-                      src={FeaturesBg}
+                      src={optionsReplication}
                       width="500"
                       height="462"
                       alt="Features bg"
-                    />
-                    <img
-                      className="md:max-w-none absolute w-full left-0 transform animate-float"
-                      src={FeaturesElement}
-                      width="500"
-                      height="44"
-                      alt="Element"
-                      style={{ top: "30%" }}
                     />
                   </div>
                 </Transition>
