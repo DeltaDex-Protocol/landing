@@ -9,24 +9,18 @@ function Newsletter() {
         <div className="pb-12 md:pb-20">
           {/* CTA box */}
           <div
-            className="relative bg-slate-900 rounded py-10 px-8 md:py-16 md:px-12 shadow-2xl overflow-hidden"
+            className="relative flex bg-slate-900 rounded py-10 px-8 md:py-16 md:px-12 shadow-2xl overflow-hidden"
             data-aos="zoom-y-out"
           >
             {/* Background illustration */}
-            <div
-              className="absolute right-14 bottom-5 pointer-events-none hidden lg:block"
+            {/* <div
+              className="absolute right-14 bottom-5 pointer-events-none "
               aria-hidden="true"
-            >
-              <img
-                className="md:max-w-none mx-auto rounded"
-                src={Oneinch}
-                width="200"
-                height="200"
-                alt="Features bg"
-              />
-            </div>
+            > */}
 
-            <div className="relative flex flex-col lg:flex-row justify-between items-center">
+            {/* </div> */}
+
+            <div className="relative flex flex-col mx-auto lg:flex-row justify-between items-center">
               {/* CTA content */}
               <div className="text-center lg:text-left lg:max-w-xl">
                 <h3 className="h3 text-white mb-2">Sponsored by 1inch</h3>
@@ -35,6 +29,14 @@ function Newsletter() {
                 </p>
               </div>
             </div>
+            
+            <img
+                className="md:max-w-none mx-auto rounded"
+                src={Oneinch}
+                width="200"
+                height="200"
+                alt="Features bg"
+              />
           </div>
         </div>
       </div>
