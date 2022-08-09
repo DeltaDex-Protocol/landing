@@ -34,7 +34,9 @@ function Features() {
         <div className="pt-12 md:pt-20">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h2 mb-4 text-white">What are options contracts?</h1>
+            <h1 className="h2 mb-4 bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-600">
+              What are options contracts?
+            </h1>
             <p className="text-xl text-gray-400">
               Options are financial derivatives that give buyers the right, but
               not the obligation, to buy or sell an underlying asset at an
