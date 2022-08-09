@@ -14,7 +14,7 @@ function Footer() {
         
 
         {/* Top area: Blocks */}
-        <span className=' text-3xl text-white font-bold text-center'>Join our Community</span>
+        <span className=' text-3xl text-white font-bold text-center '>Join our Community</span>
 
         <ul className="flex space-x-32 mb-10 mt-10 mx-auto max-w-sm">
             <li>
@@ -52,7 +52,7 @@ function Footer() {
           
 
           {/* Copyrights note */}
-          <div className="text-sm text-gray-600 mr-4">Made by <a className="text-blue-600 hover:underline" href="#">DeltaDex</a>. All rights reserved.</div>
+          <div className="text-sm text-gray-600 mr-4">Made by <a className="text-purple-500 hover:underline" href="#">DeltaDex</a>. All rights reserved.</div>
 
         </div>
 

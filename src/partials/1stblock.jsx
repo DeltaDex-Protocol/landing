@@ -9,6 +9,7 @@ function HeroHome() {
 
   return (
     <section className="relative">
+
       {/* Illustration behind hero content */}
       <div
         className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none"
@@ -34,15 +35,19 @@ function HeroHome() {
             </linearGradient>
           </defs>
           <g fill="url(#illustration-01)" fillRule="evenodd">
-            <circle cx="1232" cy="128" r="128" />
-            <circle cx="155" cy="443" r="64" />
+            {/* <circle cx="1232" cy="128" r="128" /> */}
+            {/* <circle cx="155" cy="443" r="64" /> */}
           </g>
         </svg>
         {/* <div className="h-128 w-128 max-w-128  rounded-full bg-purple-600 z-100 text-white">123</div> */}
 
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="absolute right-12 bottom-80 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-1 h-1 p-28 rounded-full"></div>
+      <div class="absolute left-12 bottom-20 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-1 h-1 p-16 rounded-full"></div>
+
         {/* Hero content */}
         <div className="pt-32 pb-12 md:pt-40 md:pb-20">
           {/* Section header */}
@@ -72,7 +77,7 @@ function HeroHome() {
               >
                 <div>
                   <a
-                    className="btn text-white bg-gradient-to-r from-indigo-600 to-purple-600 w-full mb-4 sm:w-auto sm:mb-0"
+                    className="btn text-white bg-gradient-to-r from-indigo-600 to-purple-600 w-full mb-4 sm:w-auto sm:mb-0 hover:opacity-75"
                     href="#0"
                   >
                     Learn More
