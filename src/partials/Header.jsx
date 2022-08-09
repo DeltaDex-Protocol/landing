@@ -59,28 +59,35 @@ function Header() {
           <nav className="flex flex-grow">
             <ul className="flex flex-grow justify-end flex-wrap items-center">
               <li>
-                <Link
-                  to="/signin"
+                <button
                   className="font-medium text-gray-300 hover:text-gray-600 px-5 py-3 flex items-center transition duration-150 ease-in-out"
+                  onClick={() =>
+                    (window.location.href = "https://t.me/delta_dex")
+                  }
                 >
                   Community
-                </Link>
+                </button>
               </li>
               <li>
-                <Link
-                  to="/signin"
+                <button
                   className="font-medium text-gray-300 hover:text-gray-600 px-5 py-3 flex items-center transition duration-150 ease-in-out"
+                  onClick={() =>
+                    (window.location.href = "https://www.deltadex.io/")
+                  }
                 >
                   Docs
-                </Link>
+                </button>
               </li>
               <li>
-                <Link
-                  to="/signin"
+                <button
                   className="font-medium text-gray-300 hover:text-gray-600 px-5 py-3 flex items-center transition duration-150 ease-in-out"
+                  onClick={() =>
+                    (window.location.href =
+                      "https://github.com/DeltaDex-Protocol")
+                  }
                 >
                   Code
-                </Link>
+                </button>
               </li>
               <li>
                 <Link
