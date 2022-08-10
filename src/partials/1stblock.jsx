@@ -42,8 +42,8 @@ function HeroHome() {
       </div>
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
-        <div class="absolute right-12 bottom-80 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-1 h-1 p-28 rounded-full"></div>
-        <div class="absolute left-12 bottom-20 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-1 h-1 p-16 rounded-full"></div>
+        <div class="-z-10 absolute right-12 bottom-80 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-1 h-1 p-28 rounded-full"></div>
+        <div class="-z-10 absolute left-12 bottom-20 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-1 h-1 p-16 rounded-full"></div>
 
         {/* Hero content */}
         <div className="pt-32 pb-12 md:pt-40 md:pb-20">
@@ -103,29 +103,13 @@ function HeroHome() {
                 <img
                   className="mx-auto"
                   src={landinggif}
-                  width="500"
+                  width="550"
                   // height="500"
                   alt="Hero"
                 />
               </div>
             </div>
 
-            {/* Modal */}
-            <Modal
-              id="modal"
-              ariaLabel="modal-headline"
-              show={videoModalOpen}
-              handleClose={() => setVideoModalOpen(false)}
-            >
-              <div className="relative pb-9/16">
-                <iframe
-                  className="absolute w-full h-full"
-                  src="https://player.vimeo.com/video/174002812"
-                  title="Video"
-                  allowFullScreen
-                ></iframe>
-              </div>
-            </Modal>
           </div>
         </div>
       </div>
