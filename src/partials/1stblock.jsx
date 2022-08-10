@@ -42,8 +42,8 @@ function HeroHome() {
       </div>
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
-        <div class="absolute right-12 bottom-80 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-1 h-1 p-28 rounded-full"></div>
-        <div class="absolute left-12 bottom-20 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-1 h-1 p-16 rounded-full"></div>
+        <div class="-z-10 absolute right-12 bottom-80 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-1 h-1 p-28 rounded-full"></div>
+        <div class="-z-10 absolute left-12 bottom-20 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-1 h-1 p-16 rounded-full"></div>
 
         {/* Hero content */}
         <div className="pt-32 pb-12 md:pt-40 md:pb-20">

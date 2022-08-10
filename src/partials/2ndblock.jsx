@@ -42,8 +42,8 @@ function Testimonials() {
       </div>
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
-      <div class="absolute -right-20 bottom-80 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-1 h-1 p-24 rounded-full"></div>
-      <div class="absolute -left-20 bottom-0 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-1 h-1 p-12 rounded-full"></div>
+      <div class="-z-10 absolute -right-20 bottom-80 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-1 h-1 p-24 rounded-full"></div>
+      <div class="-z-10 absolute -left-20 bottom-0 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-1 h-1 p-12 rounded-full"></div>
 
         <div className="py-12 md:py-20">
           {/* Section header */}
