@@ -6,7 +6,7 @@ function Testimonials() {
   return (
     <section className="relative">
       {/* Illustration behind content */}
-      
+
       <div
         className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none -mb-32"
         aria-hidden="true"
@@ -42,8 +42,8 @@ function Testimonials() {
       </div>
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
-      <div class="-z-10 absolute -right-20 bottom-80 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-1 h-1 p-24 rounded-full"></div>
-      <div class="-z-10 absolute -left-20 bottom-0 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-1 h-1 p-12 rounded-full"></div>
+        <div class="-z-10 absolute -right-20 bottom-80 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-1 h-1 p-24 rounded-full"></div>
+        <div class="-z-10 absolute -left-20 bottom-0 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-1 h-1 p-12 rounded-full"></div>
 
         <div className="py-12 md:py-20">
           {/* Section header */}
@@ -100,22 +100,24 @@ function Testimonials() {
               <blockquote className="text-xl font-medium  text-left">
                 Derivatives are the next step in the evolution of decentralized
                 finance, however, currently there is a lack of truly
-                decentralized and efficient derivatives platforms.
+                decentralized and efficient defi derivatives platforms.
               </blockquote>
             </div>
             <div className="text-center px-12 py-8  mx-4 md:mx-0 flex space-x-10 bg-slate-900 text-white rounded-2xl">
               <span className="font-bold text-3xl my-auto">2</span>
               <blockquote className="text-xl font-medium  text-left">
-                There are P2P platforms that use centralized technology to match
-                sellers and buyers.
+                There are many P2P derivatives platforms, however, these
+                platforms use centralized servers to match sellers and buyers.
               </blockquote>
             </div>
             <div className="text-center px-12 py-8  mx-4 md:mx-0 flex space-x-10 bg-slate-900 text-white rounded-2xl">
               <span className="font-bold text-3xl my-auto">3</span>
               <blockquote className="text-xl font-medium  text-left">
-                Peer-to-pool projects do not guarantee the payment of the
-                option, such platforms have a very high risk of losing the
-                amounts of liquidity providers
+                The other model of defi derivatives platforms use a peer-to-pool
+                architeture. The main issue with this system is that these
+                projects cannot guarantee the payment of "in the money" options,
+                and such platforms have a high risk of losing the liquidity
+                supplied by liquidity providers.
               </blockquote>
             </div>
           </div>

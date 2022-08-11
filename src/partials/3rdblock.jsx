@@ -53,10 +53,11 @@ function Features() {
             >
               <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-6">
                 <h3 className="h3 mb-3 text-white">
-                  Improving Capital Efficency
+                  Improving On-Chain Capital Efficency via Derivative
+                  Replication
                 </h3>
                 <p className="text-xl text-gray-400 ">
-                  Create any option contract.
+                  With DeltaDex you can create any option contract.
                 </p>
               </div>
               {/* Tabs buttons */}
@@ -79,9 +80,9 @@ function Features() {
                     </div>
                     <div className="text-gray-600">
                       On DeltaDex, you can create any option contract for any
-                      asset. Choose from an assortment of different option
-                      hedging models in order to create the option contract of
-                      your choice.
+                      ERC-20 token. Choose from an assortment of different
+                      option hedging models in order to create the option
+                      contract of your choice.
                     </div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">

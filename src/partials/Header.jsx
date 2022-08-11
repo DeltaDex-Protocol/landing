@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-import logo from '../images/logo-deltadex.png';
+import logo from "../images/logo-deltadex.png";
 
 function Header() {
   const [top, setTop] = useState(true);
@@ -28,7 +28,7 @@ function Header() {
             {/* Logo */}
             <Link to="/" className="block" aria-label="Cruip">
               {/* <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-1 h-1 p-4 rounded-full"/> */}
-              <img src={logo} alt='logo' className="h-8"/>
+              <img src={logo} alt="logo" className="h-8" />
               {/* <svg
                 className="w-8 h-8"
                 viewBox="0 0 32 32"
@@ -76,7 +76,8 @@ function Header() {
                 <button
                   className="font-medium text-gray-300 hover:text-gray-600 px-5 py-3 flex items-center transition duration-150 ease-in-out"
                   onClick={() =>
-                    (window.location.href = "https://www.deltadex.io/")
+                    (window.location.href =
+                      "https://deltadex-protocol.github.io/deltadex.github.io/")
                   }
                 >
                   Docs
