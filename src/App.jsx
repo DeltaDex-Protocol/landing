@@ -34,9 +34,9 @@ function App() {
       {/* <Home /> */}
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/landing/signin/" element={<SignIn />} />
-        <Route path="/landing/signup/" element={<SignUp />} />
-        <Route path="/landing/reset-password/" element={<ResetPassword />} />
+        {/* <Route path="/landing/signin/" element={<SignIn />} /> */}
+        {/* <Route path="/landing/signup/" element={<SignUp />} /> */}
+        {/* <Route path="/landing/reset-password/" element={<ResetPassword />} /> */}
       </Routes>
     </React.StrictMode>
   );
