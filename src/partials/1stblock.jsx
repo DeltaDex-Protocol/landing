@@ -76,6 +76,10 @@ function HeroHome() {
                   <a
                     className="btn text-white bg-gradient-to-r from-indigo-600 to-purple-600 w-full mb-4 sm:w-auto sm:mb-0 hover:opacity-75"
                     href="#0"
+                    onClick={() =>
+                      (window.location.href =
+                        "https://deltadex-protocol.github.io/deltadex.github.io/")
+                    }
                   >
                     Learn More
                   </a>
@@ -84,6 +88,9 @@ function HeroHome() {
                   <a
                     className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4"
                     href="#0"
+                    onClick={() =>
+                      (window.location.href = "https://t.me/delta_dex")
+                    }
                   >
                     Join Us
                   </a>
@@ -109,7 +116,6 @@ function HeroHome() {
                 />
               </div>
             </div>
-
           </div>
         </div>
       </div>
