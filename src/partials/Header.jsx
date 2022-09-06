@@ -102,7 +102,7 @@ function Header() {
                 >
                   <button
                     onClick={() =>
-                      (window.location.href = "http://195.133.147.162:3000/")
+                      (window.location.href = "https://deltadex.io/app")
                     }
                   >
                     Launch App
