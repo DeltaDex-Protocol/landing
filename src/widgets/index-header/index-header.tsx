@@ -37,10 +37,10 @@ export const Header = () => {
         <nav className="hidden xl:block">
           <ul className="list-none flex items-center gap-16">
             <li>
-              <CustomLink href="#community">Community</CustomLink>
+              <CustomLink href="https://t.me/delta_dex">Community</CustomLink>
             </li>
             <li>
-              <CustomLink href="#docs">Docs</CustomLink>
+              <CustomLink href="https://deltadex-protocol.github.io/deltadex.github.io/">Docs</CustomLink>
             </li>
             <li>
               <ButtonLink href="https://deltadex.io/app/vanilla-options" color="primary" variant="contained">
