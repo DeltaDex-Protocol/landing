@@ -1,4 +1,8 @@
-export { MenuCard } from "./menu-card/menu-card";
+export { Plate } from "./plate/plate";
+
+export { BurgerMenu } from "./burger-menu/burger-menu";
+export { Menu } from "./menu/menu";
+export { MenuItem } from "./menu/menu-item";
 
 export { RowColContainer } from "./row-col-container/row-col-container";
 export { ColContainer } from "./col-container/col-container";

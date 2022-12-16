@@ -1,7 +1,7 @@
-import { HTMLAttributes, useEffect, useRef } from "react";
+import { forwardRef, HTMLAttributes } from "react";
 import cn from "classnames";
 
-interface MenuCard extends HTMLAttributes<HTMLDivElement> {
+interface Menu extends HTMLAttributes<HTMLDivElement> {
   isOpen: boolean;
   onClose: () => void;
   alignX?: "center" | "left" | "right";
@@ -9,18 +9,17 @@ interface MenuCard extends HTMLAttributes<HTMLDivElement> {
 }
 
 // надо дописать
-export const MenuCard = (props: MenuCard) => {
-  const menuRef = useRef<HTMLDivElement>(null);
-
+export const Menu = forwardRef<HTMLDivElement, Menu>((props: Menu, ref) => {
   return (
     <div
-      ref={menuRef}
+      ref={ref}
+      {...props}
       className={cn(
-        "absolute bg-[rgba(255,255,255,0.87)] w-52 backdrop-blur-sm z-10 rounded-2xl overflow-hidden",
+        "z-[10000] absolute bg-opacity-40 w-56 backdrop-blur-md rounded-xl overflow-hidden max-h-64 overflow-y-auto",
+        props.className,
         {
-          [`hidden`]: !props.isOpen,
-          [`block`]: props.isOpen,
-
+          ["hidden"]: !props.isOpen,
+          ["block"]: props.isOpen,
           [`right-2/4`]: props.alignX === "center" || !props.alignX,
           [`left-0`]: props.alignX === "left",
           [`right-0`]: props.alignX === "right",
@@ -31,7 +30,7 @@ export const MenuCard = (props: MenuCard) => {
         }
       )}
     >
-      {props.children}
+      <ul className="list-none">{props.children}</ul>
     </div>
   );
-};
+});

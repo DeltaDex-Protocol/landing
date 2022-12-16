@@ -1,20 +1,15 @@
 import {
+  BurgerMenu,
   ButtonLink,
   Container,
   CustomLink,
   HeaderLayout,
-  IconButton,
-  MenuCard,
+  MenuItem,
 } from "shared/ui";
-import { MdMenu } from "react-icons/md";
 import Logo from "shared/assets/media/svg/delta_logo.svg";
 import Image from "next/image";
-import { useMemo, useState } from "react";
 
-// по-хорошему, надо декомпозировать дополнительно
 export const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
     <HeaderLayout>
       <Container className="flex justify-between items-center">
@@ -26,36 +21,21 @@ export const Header = () => {
             className="w-full h-full object-contain"
           />
         </div>
-        {/* надо написать хук, который возвращает ширину экрана */}
-        <div className="header-wrap header-wrap--nav block relative md:hidden">
-          <IconButton>
-            <MdMenu onClick={() => setIsOpen(true)} className="w-full h-full" />
-          </IconButton>
-          <MenuCard
-            onClose={() => setIsOpen(false)}
-            isOpen={isOpen}
-            alignX="center"
-            alignY="center"
-          >
-            <nav className="">
-              <ul className="flex items-center flex-col">
-                <li className="w-full px-2 py-2">
-                  <CustomLink href="#community">Community</CustomLink>
-                </li>
-                <li className="w-full px-2 py-2">
-                  <CustomLink href="#docs">Docs</CustomLink>
-                </li>
-                <li className="w-full px-2 py-2">
-                  <ButtonLink href="#docs" variant="contained">
-                    Launch
-                  </ButtonLink>
-                </li>
-              </ul>
-            </nav>
-          </MenuCard>
+        <div className="relative block xl:hidden">
+          <BurgerMenu>
+            <MenuItem href="https://t.me/delta_dex" className="bg-white bg-opacity-10">
+              Community
+            </MenuItem>
+            <MenuItem href="https://deltadex-protocol.github.io/deltadex.github.io/" className="bg-white bg-opacity-10">
+              Docs
+            </MenuItem>
+            <MenuItem href="https://deltadex.io/app/vanilla-options" className="bg-white bg-opacity-10">
+              Launch
+            </MenuItem>
+          </BurgerMenu>
         </div>
-        <nav className="header-wrap header-wrap--nav hidden md:block">
-          <ul className="flex items-center md:gap-8 lg:gap-16">
+        <nav className="hidden xl:block">
+          <ul className="list-none flex items-center gap-16">
             <li>
               <CustomLink href="#community">Community</CustomLink>
             </li>
@@ -63,7 +43,7 @@ export const Header = () => {
               <CustomLink href="#docs">Docs</CustomLink>
             </li>
             <li>
-              <ButtonLink href="#docs" variant="contained">
+              <ButtonLink href="https://deltadex.io/app/vanilla-options" color="primary" variant="contained">
                 Launch
               </ButtonLink>
             </li>

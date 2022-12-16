@@ -1,8 +1,10 @@
+import { memo } from "react";
+
 import Image from "next/image";
 import { ButtonLink, RowColContainer, Typography } from "shared/ui";
 import LineChart from "shared/assets/media/svg/line_chart.svg";
 
-export const ReplicateSection = () => {
+export const ReplicateSection = memo(() => {
   return (
     <section className="section replicate-section flex items-center">
       <RowColContainer>
@@ -20,7 +22,7 @@ export const ReplicateSection = () => {
             Run the strategy that at the expiry gives the PnL as close as
             possible to payoff of a chosen option
           </Typography>
-          <ButtonLink href="#" color="primary" variant="contained">
+          <ButtonLink href="https://deltadex.io/app/vanilla-options" color="primary" variant="contained">
             Open app
           </ButtonLink>
         </div>
@@ -35,4 +37,4 @@ export const ReplicateSection = () => {
       </RowColContainer>
     </section>
   );
-};
+});

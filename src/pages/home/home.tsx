@@ -1,4 +1,4 @@
-import { ButtonLink, Container, Typography } from "shared/ui";
+import { ButtonLink, Container, Plate, Typography } from "shared/ui";
 import { Header } from "widgets/index-header";
 import { AdvantagesSection } from "./sections/advantages-section/advantages-section";
 import { HedgeSection } from "./sections/hedge-section/hedge-section";
@@ -9,6 +9,10 @@ import { WelcomeSection } from "./sections/welcome-section/welcome-section";
 
 import Triangle from "shared/assets/media/img/triangle.png";
 import Image from "next/image";
+
+import st from "./styles.module.css";
+import cn from "classnames";
+import Head from "next/head";
 
 export const Home = () => {
   return (
@@ -23,40 +27,34 @@ export const Home = () => {
         <AdvantagesSection />
         <HedgeSection />
       </main>
-      <footer className="footer h-screen flex items-center">
+      <footer className="py-12 flex items-center">
         <Container className="flex items-center justify-center">
-          <div className="join-community-card w-full px-12 py-12 lg:px-24 lg:py-24 gap-16 flex flex-col lg:flex-row lg:items-center lg:justify-between">
-            <div className="community-card-side flex flex-col gap-8 community-card-side--left w-full lg:w-2/4">
+          <Plate
+            className={cn(
+              st.join_community_card,
+              "px-4 py-12 flex items-center gap-8 w-full flex-col md:px-16 md:py-16 md:flex-row md:w-10/12 "
+            )}
+          >
+            <div className="w-full flex flex-col gap-8 md:w-2/4">
               <Typography
-                tag="h4"
-                variant="h2"
-                className="color-footer-title-gradient text-center lg:text-start"
+                tag="h2"
+                className="color-footer-title-gradient text-center md:text-start"
               >
                 Join our community
               </Typography>
-              <div className="flex items-center flex-col w-full lg:flex-row gap-4">
-                <ButtonLink
-                  color="plate"
-                  variant="contained"
-                  href="#somelink"
-                  className="w-full lg:w-fit"
-                >
+              <div className="flex flex-col gap-4 md:flex-row">
+                <ButtonLink href="https://t.me/delta_dex" variant="contained" color="plate">
                   Telegram
                 </ButtonLink>
-                <ButtonLink
-                  color="plate"
-                  variant="contained"
-                  href="#somelink"
-                  className="w-full lg:w-fit"
-                >
+                <ButtonLink href="https://twitter.com/deltadexlabs" variant="contained" color="plate">
                   Twitter
                 </ButtonLink>
               </div>
             </div>
-            <div className="community-card-side community-card-side--right w-full lg:w-2/4">
+            <div className="w-3/4 md:w-2/4">
               <Image src={Triangle} alt="DeltaDex" />
             </div>
-          </div>
+          </Plate>
         </Container>
       </footer>
     </>

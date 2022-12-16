@@ -1,10 +1,14 @@
+import { memo } from "react";
+
 import Image from "next/image";
 import { ColContainer, Typography } from "shared/ui";
 import Manage from "shared/assets/media/img/pos_managing.jpg";
+import cn from "classnames";
+import st from "./styles.module.css";
 
-export const ManageSection = () => {
+export const ManageSection = memo(() => {
   return (
-    <section className="section manage-section flex items-center">
+    <section className={cn("section", st.manage_section, "flex items-center")}>
       <ColContainer>
         <Typography tag="h2" className="h2 text-white text-center">
           Manage your positions
@@ -18,4 +22,4 @@ export const ManageSection = () => {
       </ColContainer>
     </section>
   );
-};
+});
