@@ -14,8 +14,8 @@ export const AdvantagesSection = memo(() => {
                 Hedge against impermament loss
               </Typography>
               <Typography tag="p" className="body1 text-secondary">
-                Liquidity providers may hedge against IL by replicating put
-                option
+                Liquidity providers can hedge against IL by replicating put
+                options
               </Typography>
             </Plate>
           </div>
@@ -25,8 +25,9 @@ export const AdvantagesSection = memo(() => {
                 Earn higher yield
               </Typography>
               <Typography tag="p" className="body1 text-secondary">
-                DeltaDex users may run a wide variety of strategies as well as
-                options market-making and hedging IL
+                Protect your assets from impermament loss on Uniswap V3
+                by replicating a put option contract
+
               </Typography>
             </Plate>
           </div>
@@ -36,9 +37,13 @@ export const AdvantagesSection = memo(() => {
                 Fully decentralized
               </Typography>
               <Typography tag="p" className="body1 text-secondary">
-                Using mathematical formulas, DeltaDex smart contract calculates
-                the amount of asset to buy (or sell) and autonomously executes
-                the trade
+                The DeltaDex protocol is built with decentralization at heart, with no 
+                central authority that controls user funds. 
+              </Typography>
+              <Typography tag="p" className="body1 text-secondary">
+                By using mathematical formulas, the DeltaDex smart contract continuously calculates
+                the amount of the underlying asset to buy or sell and autonomously executes
+                the trade.
               </Typography>
             </Plate>
           </div>

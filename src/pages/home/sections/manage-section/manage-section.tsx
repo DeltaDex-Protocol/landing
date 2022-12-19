@@ -14,7 +14,7 @@ export const ManageSection = memo(() => {
           Manage your positions
         </Typography>
         <Typography tag="p" className="body1 text-secondary text-center">
-          Track and manage the intermediate results of your replications
+          Track and manage the intermediate results of your option strategies
         </Typography>
         <div className="w-full md:w-10/12">
           <Image src={Manage} alt="Managing" loading="lazy" />
