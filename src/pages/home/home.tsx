@@ -14,6 +14,7 @@ import st from "./styles.module.css";
 import cn from "classnames";
 import Head from "next/head";
 
+
 export const Home = () => {
   return (
     <>

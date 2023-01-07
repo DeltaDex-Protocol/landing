@@ -2,7 +2,7 @@ import { memo } from "react";
 
 import Image from "next/image";
 import { ColContainer, Typography } from "shared/ui";
-import Manage from "shared/assets/media/img/pos_managing.png";
+import Manage from "shared/assets/media/img/pos_managing1.png";
 import cn from "classnames";
 import st from "./styles.module.css";
 
