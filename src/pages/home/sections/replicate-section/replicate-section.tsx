@@ -19,8 +19,8 @@ export const ReplicateSection = memo(() => {
             tag="p"
             className="body1 text-secondary text-center lg:text-start"
           >
-            Run the strategy that at the expiry gives the PnL as close as
-            possible to payoff of a chosen option
+            Run a strategy that at expiry yields a comparable PnL to 
+            the selected option contract
           </Typography>
           <ButtonLink href="https://deltadex.io/app/vanilla-options" color="primary" variant="contained">
             Open app
